@@ -32,6 +32,7 @@ Debian:
 RedHat:
   client_pkg: openldap-clients
   server_pkg: openldap-servers
+  slapd_include_dir: /etc/openldap/include
   slapd_includes:
     - /etc/openldap/schema/core.schema
     - /etc/openldap/schema/cosine.schema
@@ -45,6 +46,7 @@ RedHat:
 Suse:
   client_pkg: openldap2-client
   server_pkg: openldap2
+  slapd_include_dir: /etc/openldap/include
   slapd_includes:
     - /etc/openldap/schema/core.schema
     - /etc/openldap/schema/cosine.schema
@@ -67,6 +69,7 @@ FreeBSD:
   client_pkg: openldap-client
   server_config: /usr/local/etc/openldap/slapd.conf
   server_pkg: openldap-server
+  slapd_include_dir: /usr/local/etc/openldap/include
   slapd_includes:
     - /usr/local/etc/openldap/schema/core.schema
   slapd_argsfile: /var/run/openldap/slapd.args
