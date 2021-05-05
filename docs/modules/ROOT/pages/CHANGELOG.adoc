@@ -1,0 +1,110 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/openldap-formula/compare/v0.7.2...v0.8.0++[0.8.0^] (2020-12-16)
+
+=== Continuous Integration
+
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/c6140e220c521db29ed5447a50fb2270f5c1719d[c6140e2^])
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/openldap-formula/commit/0851056ebd01de4b8c0f1c49c5ba699929500182[0851056^])
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/b5ca89a759a1d79c3626127ffd130400ca2a32b7[b5ca89a^])
+* *kitchen+travis:* add new platforms [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/b9e383b2831207e0bae227d432d006e4fd22bad0[b9e383b^])
+* *kitchen+travis:* adjust matrix to add `3000.2` & remove `2018.3`
+ [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/5248c38cc2955b4d5f208e0316165fedc491bdcb[5248c38^])
+* *kitchen+travis:* adjust matrix to add `3000.3` [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/b490acfe9a1d613cc2985f7da4991fc53bc9f31e[b490acf^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/31fd36b5ee4fafa384eae2cc9aae019e2ae2dab3[31fd36b^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/c52698cf5fa9fab279764e4353324560b3704636[c52698c^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/9522b0168b5ff8dbfaa4972c8fd74bd7e8bbbc03[9522b01^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/d8c63a654145f6f8e31ac661a23ea2808b8c842a[d8c63a6^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/0fd68c1498ce2ad61bdec4b5b37e6fce9ceb9857[0fd68c1^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/openldap-formula/commit/e86ecaa40193b231c99d8c4e90a2ea882d335d19[e86ecaa^])
+
+=== Features
+
+* *tls:* manage tls on slapd conf
+(https://github.com/saltstack-formulas/openldap-formula/commit/1d830448359602600038ec62072d47062908e97f[1d83044^])
+
+== link:++https://github.com/saltstack-formulas/openldap-formula/compare/v0.7.1...v0.7.2++[0.7.2^] (2020-04-10)
+
+=== Tests
+
+* *config_spec:* test bug fixed by
+https://github.com/saltstack-formulas/openldap-formula/issues/33[#33^]
+(https://github.com/saltstack-formulas/openldap-formula/commit/50de5b91dca94bc2d665e4eb6467bb3fbdf2e1b4[50de5b9^])
+
+== link:++https://github.com/saltstack-formulas/openldap-formula/compare/v0.7.0...v0.7.1++[0.7.1^] (2020-04-10)
+
+=== Bug Fixes
+
+* *slapd.conf:* fix additional module loading
+(https://github.com/saltstack-formulas/openldap-formula/commit/86e1b2b55e3280c5ea4c1334be0d3e599166e7dd[86e1b2b^])
+
+== link:++https://github.com/saltstack-formulas/openldap-formula/compare/v0.6.2...v0.7.0++[0.7.0^] (2020-04-05)
+
+=== Features
+
+* *indexes:* add indexes management in slapd.conf
+(https://github.com/saltstack-formulas/openldap-formula/commit/afee20b4146daeb9bb5b8bc05ce56f69436526c3[afee20b^])
+
+=== Tests
+
+* *config_spec:* add test for indexes management in `slapd.conf`
+(https://github.com/saltstack-formulas/openldap-formula/commit/0813e52a213079caab021f81bec844db42500faf[0813e52^])
+
+== link:++https://github.com/saltstack-formulas/openldap-formula/compare/v0.6.1...v0.6.2++[0.6.2^] (2020-04-05)
+
+=== Tests
+
+* *config_spec:* add InSpec control to test include file
+(https://github.com/saltstack-formulas/openldap-formula/commit/bb36517f5f541a38b7e313270662ce360a624670[bb36517^])
+* *config_spec:* fix tests related to `root`/`wheel` group
+(https://github.com/saltstack-formulas/openldap-formula/commit/4427c98f4968df76cd53a245110f9cc4f6d562b3[4427c98^])
+
+== link:++https://github.com/saltstack-formulas/openldap-formula/compare/v0.6.0...v0.6.1++[0.6.1^] (2020-04-04)
+
+=== Bug Fixes
+
+* *include-ex-pat:* do work`exclude_pat` and slapd_inc dir refactor
+(https://github.com/saltstack-formulas/openldap-formula/commit/4f285378a74ea1745b0f26bc66dc350de81f4a57[4f28537^])
+
+== link:++https://github.com/saltstack-formulas/openldap-formula/compare/v0.5.4...v0.6.0++[0.6.0^] (2020-04-03)
+
+=== Bug Fixes
+
+* *salt-lint:* fix all errors
+(https://github.com/saltstack-formulas/openldap-formula/commit/6b1f970eaabf6267205c819416a1503616df53c1[6b1f970^])
+* *yamllint:* fix all errors
+(https://github.com/saltstack-formulas/openldap-formula/commit/dd94ea5373ede5fa91737933c164abb7b87c746b[dd94ea5^])
+
+=== Code Refactoring
+
+* *maps:* remove duplicates and improve efficiency
+(https://github.com/saltstack-formulas/openldap-formula/commit/73f5e8bf7e169c381cca8d65f732486a247252c6[73f5e8b^])
+
+=== Documentation
+
+* *readme:* move to `docs/` directory and apply common structure
+(https://github.com/saltstack-formulas/openldap-formula/commit/0d6205791e74e04d065c41d2564cde01815d28ce[0d62057^])
+
+=== Features
+
+* *semantic-release:* implement for this formula
+(https://github.com/saltstack-formulas/openldap-formula/commit/9188fb7a7dd16af3e26fc20c39774ec4d9c54bfd[9188fb7^])
+
+=== Tests
+
+* *inspec:* add package, config & service tests + pillar
+(https://github.com/saltstack-formulas/openldap-formula/commit/13f725032b1db0b37928b318c81816ce8da967e7[13f7250^])
